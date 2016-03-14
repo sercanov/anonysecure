@@ -1,0 +1,35 @@
+{
+  "name": "anonysecure",
+  "version": "0.1.0",
+  "description": "It authorizes the connection between your client and server without any logins. It fits the applcations which doesn't have a login / user system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "crypto-js": "^3.1.5",
+    "restify-errors": "^4.2.1"
+  },
+  "keywords": [
+    "auth",
+    "react",
+    "fetch",
+    "secure",
+    "anonymouse",
+    "without",
+    "login",
+    "user"
+  ],
+  "author": {
+    "email": "srcn.dmrcn@gmail.com",
+    "name": "Sercan Demircan"
+  },
+  "maintainers": [
+    {
+      "name": "sercanov",
+      "email": "srcn.dmrcnh@gmail.com"
+    }
+  ],
+  "license": "GPL-3.0"
+}
