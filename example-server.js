@@ -1,10 +1,8 @@
-var anonysecure = require('./index.js').serverSide;
+var anonysecure = require('anonysecure').serverSide;
 var restify = require('restify');
 
 // CREATE SERVER //
 var server = restify.createServer();
-server.use(restify.bodyParser());
-server.use(restify.queryParser());
 server.use(restify.authorizationParser());
 
 server.use(function(req,res,next){
@@ -16,20 +14,24 @@ server.use(function(req,res,next){
         "timeout":60
     };
 
-    anonysecure(req,res,next,options); });
+    anonysecure(req,res,next,options);
+});
 
+// This is not excluded, will throw 403.
 server.get('/Ping',
-    function sendInfo(req, res) {
+    function handlePing(req, res) {
         res.send("OK");
     });
 
+// This is excluded in URLs, will be OK to any request.
 server.get('/Login',
-    function sendInfo(req, res) {
+    function handleLogin(req, res) {
         res.send("OK");
     });
 
+// This is excluded by method type (POST), will be OK to any request.
 server.post('/A',
-    function sendInfo(req, res) {
+    function handleA(req, res) {
         res.send("OK");
     });
 
