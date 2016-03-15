@@ -1,6 +1,6 @@
 {
   "name": "anonysecure",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "It authorizes the connection between your client and server without any logins. It fits the applcations which doesn't have a login / user system.",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,14 @@
   "dependencies": {
     "crypto-js": "^3.1.5",
     "restify-errors": "^4.2.1"
+  },
+  "repository" : {
+    "type" : "git"
+  , "url" : "https://github.com/sercanov/anonysecure.git"
+  },
+  "bugs":{
+    "url" : "https://github.com/sercanov/anonysecure/issues",
+    "email" : "srcn.dmrcn@gmail.com"
   },
   "keywords": [
     "auth",
