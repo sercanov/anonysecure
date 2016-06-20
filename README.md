@@ -1,3 +1,7 @@
+```javascript
+npm install anonysecure --save
+```
+
 # anonysecure
 Anonymous authorization for JS applications
 
@@ -15,6 +19,7 @@ If decyrption fails -which means passphrase is wrong- or timestamp timed out, ba
 It should be used when your application have no login / auth systems. It's like an anonymous authorization system. Yes, like the name.
 
 ## How to use ?
+
 anonysecure has two parts, first one for the server, other one is for the client side which is optional.
 Server side is eligible with restify right now, but you get the idea so you can port it to other frameworks too.
 
